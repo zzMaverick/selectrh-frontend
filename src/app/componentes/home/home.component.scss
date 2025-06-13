@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    height: 100vh;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: start;
+    overflow-x: hidden;
+    padding-top: 20vh;
+}
+.container{
+    h1{
+        font-size: 40px;
+    }
+    b{
+        color: #5C6BC0;
+    }
+    .botoes{
+        display: flex;               
+        justify-content: center;     
+        gap: 10px;                  
+        align-items: center;
+    }
+}
