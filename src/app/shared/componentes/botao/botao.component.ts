@@ -12,6 +12,7 @@ export class BotaoComponent {
   @Input() disabled:boolean = false;
   @Input() loading:boolean = false;
   @Input() variant:BtnVariants = "primary";
+  @Input() routerLink: any;
   @Output("submit") onSubmit = new EventEmitter();
 
   submit(){
