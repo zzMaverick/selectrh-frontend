@@ -1,0 +1,18 @@
+<app-header></app-header>
+<main>
+    <section class="form-section">
+        <form [formGroup]="formularioLogin">
+            <label>email</label>
+            <input id="email" formControlName="email"/>
+            <label for="senha">Senha</label>
+            <input id="senha" formControlName="senha"/>
+            <btn-primary 
+            btn-text="Entrar"
+            variant="primary"
+            (submit)="onSubmit()"
+            [disabled]="formularioLogin.invalid">
+            ></btn-primary>
+            <a href="/recuperarconta">Esqueci a minha senha</a>
+        </form>
+    </section>
+</main>
