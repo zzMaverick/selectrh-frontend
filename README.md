@@ -1,4 +1,4 @@
-# selectrh-frontend
+# SelectRH FrontEnd
 
 **SelectRH** é uma plataforma de vagas de emprego desenvolvida como trabalho acadêmico.
 
