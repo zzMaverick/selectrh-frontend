@@ -8,12 +8,24 @@ main{
     margin: auto;
     align-items: center;
     justify-content: start;
-    overflow-x: hidden;
     padding-top: 20vh;
+    overflow: hidden;
 }
 .container{
+    display: flex;               
+    justify-content: center;   
+    align-items: colune;
+    flex-direction: column;
     h1{
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    h2{
         font-size: 40px;
+        color: black;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
     b{
         color: #5C6BC0;
@@ -21,7 +33,7 @@ main{
     .ctaSection{
         display: flex;               
         justify-content: center;     
-        gap: 10px;                  
+        gap: 50px;                  
         align-items: center;
     }
 }
