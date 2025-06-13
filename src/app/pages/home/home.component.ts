@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { AppComponent } from '../../app.component';
-import { HeaderComponent } from '../header/header.component';
+import { HeaderComponent } from '../../shared/componentes/header/header.component';
+import { BotaoComponent } from '../../shared/componentes/botao/botao.component';
 
 @Component({
   standalone: true,
   selector: 'app-home',
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, BotaoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
