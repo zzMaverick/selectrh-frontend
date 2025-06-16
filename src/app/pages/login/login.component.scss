@@ -1,13 +1,100 @@
-main{
+main {
     display: flex;
-    flex-direction: column;
     background-color: #FFFFFF;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 1140px;
     width: 100%;
-    margin: auto;
-    align-items: center;
-    justify-content: start;
+    margin: 0 auto;
+    box-sizing: border-box;
     overflow-x: hidden;
-    padding-top: 20vh;
+}
+
+
+.stretched-form-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form-title {
+    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-label {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-input {
+    padding: 18px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #C5CAE9;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-input:focus {
+    border-color: #6a1b9a;
+    background-color: #ce93d8;
+    box-shadow: 0 0 0 4px rgba(106, 27, 154, 0.2);
+    transform: scale(1.02);
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.forgot-password {
+    text-align: center;
+    color: #6a1b9a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #4a148c;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+.form-input.ng-invalid.ng-touched {
+    border-color: #d32f2f;
+    background-color: #ffcdd2;
 }

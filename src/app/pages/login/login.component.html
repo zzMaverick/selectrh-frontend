@@ -1,18 +1,40 @@
 <app-header></app-header>
 <main>
-    <section class="form-section">
-        <form [formGroup]="formularioLogin">
-            <label>email</label>
-            <input id="email" formControlName="email"/>
-            <label for="senha">Senha</label>
-            <input id="senha" formControlName="senha"/>
-            <btn-primary 
-            btn-text="Entrar"
-            variant="primary"
-            (submit)="onSubmit()"
-            [disabled]="formularioLogin.invalid">
-            ></btn-primary>
-            <a href="/recuperarconta">Esqueci a minha senha</a>
-        </form>
+    <section class="stretched-form-section">
+        <div class="form-wrapper">
+            <form [formGroup]="formularioLogin" class="login-form">
+                <h2 class="form-title">Login</h2>
+                
+                <div class="input-group">
+                    <label for="email" class="input-label">Email</label>
+                    <input 
+                        id="email" 
+                        type="email" 
+                        formControlName="email" 
+                        class="form-input"
+                        placeholder="seu@email.com"/>
+                </div>
+                
+                <div class="input-group">
+                    <label for="senha" class="input-label">Senha</label>
+                    <input 
+                        id="senha" 
+                        type="password" 
+                        formControlName="senha" 
+                        class="form-input"
+                        placeholder="••••••••"/>
+                </div>
+                
+                <btn-primary 
+                    btn-text="Entrar"
+                    variant="primary"
+                    (submit)="onSubmit()"
+                    [disabled]="formularioLogin.invalid"
+                    class="submit-btn">
+                </btn-primary>
+                
+                <a href="/recuperarconta" class="forgot-password">Esqueci a minha senha</a>
+            </form>
+        </div>
     </section>
 </main>
