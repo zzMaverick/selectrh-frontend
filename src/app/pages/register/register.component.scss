@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    color: #000000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-input {
+    padding: 15px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #C5CAE9;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-input:focus {
+    border-color: #6a1b9a;
+    background-color: #ce93d8;
+    box-shadow: 0 0 0 4px rgba(106, 27, 154, 0.2);
+    transform: scale(1.02);
+    outline: none;
+}
+
+
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+.formacoesAcademicasCadastradas,
+.experienciasCadastradas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.formacoesAcademicasCadastradas ul,
+.experienciasCadastradas ul {
+    list-style: none;
+    background-color: #C5CAE9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.formacoesAcademicasCadastradas li:first-child,
+.experienciasCadastradas li:first-child {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+}
+
+.AdicionarFormacaosec,
+.AdicionarExperienciasec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.AdicionarFormacaosec .submit-btn,
+.AdicionarExperienciasec .submit-btn {
+    grid-column: span 2;
+}
