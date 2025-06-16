@@ -1,0 +1,67 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 24px; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+main h2 {
+    margin: 24px 0 16px 24px; 
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.vagasComBaseNoPerfil {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 10px; 
+    margin-bottom: 40px;
+}
+.vagas-coluna app-vaga {
+    margin-bottom: 12px;
+}
+.triagem-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.coluna-triagem {
+    flex: 1;
+    min-height: 300px;
+}
+
+
+.coluna-triagem h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+}
+
+.vagas-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.triagem-section {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.titulo-candidaturas {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
